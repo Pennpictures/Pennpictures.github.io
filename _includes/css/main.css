@@ -3,6 +3,12 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('css/font-awesome/webfonts/LeagueScriptNumberOne-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
     overflow-x: hidden;
@@ -32,8 +38,9 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'MyCustomFont';
     font-weight: 700;
+
 }
 
 hr.star-light,
