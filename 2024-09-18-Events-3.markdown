@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 3
+date: 2024-09-18
+img: Event.png
+alt: Pet.png
+project-date: September 2024
+client: MMI
+category: Events Photography
+description: Cooporate bowling event @ Choa Chu Kang SAFRA
+---

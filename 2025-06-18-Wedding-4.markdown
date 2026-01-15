@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 2
+date: 2025-06-18
+img: Wedding.png
+alt: 
+project-date: June 2025
+client: Shahfeeq and Eunice
+category: Wedding Photography
+description: Oasia Hotel Sentosa
+---

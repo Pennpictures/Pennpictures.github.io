@@ -1,0 +1,64 @@
+# Site settings
+title: Pennpictures
+email: thepennpics@gmail.com
+url: https://leon-quek.github.io/pennpictures
+description: "Inspired by the art of storytelling, the name Pennpictures embodies the essence of 'penning' memories through the lens, transforming fleeting instances into timeless visuals. Capturing emotions, celebrating connections, and crafting narratives that speak beyond words.
+"
+keywords: "your keywords, separated by commas"
+skills: "Wedding Photographer - Events Photographer - Portrait Photographer"
+meta_author: LastName FirstName
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+#contact: disqus
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+# disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: B37B51 #dark brown
+  primary-rgb: F9F5F0 #offwhite
+  secondary: CCA78A #light brown
+  secondary-dark: B37B51 #dark brown
+
+# Footer settings
+footer:
+  #copyright: Dr. Henry Jekyll
+  #location: Location
+  social: Follow us on
+  #credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: instagram
+    url: https://www.instagram.com/thepennpics/?hl=en
+
+# Postal address (add as many lines as necessary)
+#address:
+  #- line: 
+  #- line: 
+
+# Credits content
+#credits:
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""

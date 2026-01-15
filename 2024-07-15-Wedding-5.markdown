@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 5
+date: 2024-07-15
+img: Wedding2.png
+alt: 
+project-date: July 2024
+client: Wai cheong And Xin Huey
+category: Wedding photography
+description: Singapore Marriott Tang Plaza Hotel
+---

@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 1
+date: 2024-04-18
+img: Portrait.png
+alt:
+project-date: April 2024
+client: Portrait
+category: Portrait Photography
+description: 2 Location shoot at Gardens By the Bay and Seletar Reservior
+---
