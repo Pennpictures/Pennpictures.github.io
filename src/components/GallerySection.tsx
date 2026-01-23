@@ -1,8 +1,7 @@
 import galleryPortrait from "@/assets/gallery-portrait.jpg";
-import galleryUrban from "@/assets/gallery-urban.jpg";
-import galleryNature from "@/assets/gallery-nature.jpg";
-import galleryArchitecture from "@/assets/gallery-architecture.jpg";
-import gallerySeascape from "@/assets/gallery-seascape.jpg";
+import galleryWedding from "@/assets/gallery-wedding.jpg";
+import galleryCouple from "@/assets/gallery-couple.jpg";
+import galleryPet from "@/assets/gallery-pet.jpg";
 
 interface GalleryImage {
   src: string;
@@ -14,32 +13,26 @@ interface GalleryImage {
 const galleryImages: GalleryImage[] = [
   {
     src: galleryPortrait,
-    alt: "Dramatic portrait with studio lighting",
-    category: "Portrait",
+    alt: "Elegant portrait with soft studio lighting",
+    category: "Portraits",
     span: "tall",
   },
   {
-    src: galleryUrban,
-    alt: "Urban street scene at night with neon lights",
-    category: "Urban",
+    src: galleryWedding,
+    alt: "Beautiful wedding ceremony at golden hour",
+    category: "Events & Weddings",
     span: "wide",
   },
   {
-    src: galleryNature,
-    alt: "Lone tree on misty hillside at dawn",
-    category: "Nature",
-    span: "normal",
-  },
-  {
-    src: galleryArchitecture,
-    alt: "Modern architectural geometry in black and white",
-    category: "Architecture",
+    src: galleryCouple,
+    alt: "Romantic couple embrace at sunset",
+    category: "Couple Shoots",
     span: "tall",
   },
   {
-    src: gallerySeascape,
-    alt: "Ocean waves at sunset with rocky coastline",
-    category: "Seascape",
+    src: galleryPet,
+    alt: "Professional pet portrait with warm tones",
+    category: "Pet Photography",
     span: "wide",
   },
 ];
@@ -59,7 +52,7 @@ const GallerySection = () => {
         </div>
 
         {/* Masonry Grid */}
-        <div className="grid auto-rows-[200px] grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid auto-rows-[200px] grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {galleryImages.map((image, index) => (
             <div
               key={index}
@@ -67,7 +60,7 @@ const GallerySection = () => {
                 image.span === "tall"
                   ? "row-span-2"
                   : image.span === "wide"
-                  ? "md:col-span-2"
+                  ? "md:col-span-1 lg:col-span-2"
                   : ""
               }`}
             >
