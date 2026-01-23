@@ -15,25 +15,25 @@ const galleryImages: GalleryImage[] = [
     src: galleryPortrait,
     alt: "Elegant portrait with soft studio lighting",
     category: "Portraits",
-    span: "tall",
+    span: "normal",
   },
   {
     src: galleryWedding,
     alt: "Beautiful wedding ceremony at golden hour",
     category: "Events & Weddings",
-    span: "wide",
+    span: "normal",
   },
   {
     src: galleryCouple,
     alt: "Romantic couple embrace at sunset",
     category: "Couple Shoots",
-    span: "tall",
+    span: "normal",
   },
   {
     src: galleryPet,
     alt: "Professional pet portrait with warm tones",
     category: "Pet Photography",
-    span: "wide",
+    span: "normal",
   },
 ];
 
