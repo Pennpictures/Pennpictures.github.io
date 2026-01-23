@@ -4,7 +4,7 @@ import GallerySection from "@/components/GallerySection";
 import FooterSection from "@/components/FooterSection";
 
 // Replace this with your actual Google Form URL
-const GOOGLE_FORM_URL = "https://docs.google.com/forms/u/3/";
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeOdQtjSG3TUBKr4MpnjDqMgeOLYZr0WizebkB5RKSaunsRDg/viewform?usp=header";
 
 const Index = () => {
   return (
