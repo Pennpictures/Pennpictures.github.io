@@ -25,46 +25,25 @@ const AboutSection = () => {
                 About Me
               </p>
               <h2 className="font-serif text-4xl font-light text-foreground md:text-5xl">
-                Hello, I'm <span className="text-primary">[Your Name]</span>
+                Hello there! We’re Leon and Elizabeth, a husband-and-wife duo.
               </h2>
             </div>
 
             <div className="space-y-4 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                I'm a passionate photographer specializing in capturing life's most precious moments. 
-                With over [X] years of experience, I've had the privilege of documenting countless 
-                stories through my lens.
+                Our photography journey began during the two years we lived in Taiwan.
+                On weekends we would often explore different parts of the country,
+                snapping photos wherever we went (see photos below!). Those experiences
+                inspired us to start Pennpictures.
               </p>
               <p className="leading-relaxed">
-                My work focuses on portraits, weddings and events, couple sessions, and the unique 
-                personalities of our beloved pets. I believe every photograph should tell a story 
-                and evoke emotion.
-              </p>
-              <p className="leading-relaxed">
-                When I'm not behind the camera, you'll find me exploring new locations, 
-                experimenting with lighting techniques, or enjoying time with my own furry companions.
+                We’re passionate about helping you document your special moments —
+                images you can look back on and cherish for years to come. We believe
+                that photography sessions should be easy and stress-free, so rest assured
+                — you are in good hands! Our goal is to make every session as relaxed and
+                fun as possible.
               </p>
             </div>
-
-            {/* Stats */}
-            <div className="flex gap-8 pt-4">
-              <div>
-                <p className="font-serif text-3xl font-light text-primary">[X]+</p>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground">
-                  Years Experience
-                </p>
-              </div>
-              <div>
-                <p className="font-serif text-3xl font-light text-primary">[X]+</p>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground">
-                  Happy Clients
-                </p>
-              </div>
-              <div>
-                <p className="font-serif text-3xl font-light text-primary">[X]+</p>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground">
-                  Sessions
-                </p>
               </div>
             </div>
           </div>
