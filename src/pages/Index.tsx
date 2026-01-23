@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
 import GallerySection from "@/components/GallerySection";
 import FooterSection from "@/components/FooterSection";
 
@@ -9,6 +10,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background dark">
       <HeroSection googleFormUrl={GOOGLE_FORM_URL} />
+      <AboutSection />
       <GallerySection />
       <FooterSection googleFormUrl={GOOGLE_FORM_URL} />
     </div>
