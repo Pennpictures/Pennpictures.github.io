@@ -10,11 +10,8 @@ const FooterSection = ({ googleFormUrl = "#" }: FooterSectionProps) => {
           {/* Logo / Name */}
           <div className="text-center md:text-left">
             <h3 className="font-serif text-2xl font-light text-foreground">
-              Capturing Light
+              Penning Memories
             </h3>
-            <p className="mt-2 font-sans text-sm text-muted-foreground">
-              Photography that tells stories
-            </p>
           </div>
 
           {/* CTA Button */}
