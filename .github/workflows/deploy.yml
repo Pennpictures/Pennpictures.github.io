@@ -1,61 +1,36 @@
-# This workflow builds and deploys a Vite React site to GitHub Pages
+# Workflow for building and deploying a Vite React site to GitHub Pages
 name: Deploy Vite site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
-  # Build job
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
-      
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Build with Vite
         run: npm run build
-        env:
-          NODE_ENV: production
-      
+
       - name: Deploy to GitHub Pages
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add dist -f
-          git commit -m "Deploy: $(date '+%Y-%m-%d %H:%M:%S')"
-          git push origin $(git rev-parse --abbrev-ref HEAD)
-      
-      - name: Move dist contents to root
-        run: |
-          # Remove old assets if they exist
-          rm -rf assets index.html *.js *.css 2>/dev/null || true
-          # Copy everything from dist to root
-          cp -r dist/* .
-      
-      - name: Commit root files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git commit -m "Deploy to GitHub Pages: $(date '+%Y-%m-%d %H:%M:%S')" || true
-          git push origin master
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          cname: pennpictures.github.io
