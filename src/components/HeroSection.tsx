@@ -18,7 +18,7 @@ const HeroSection = ({ googleFormUrl = "#" }: HeroSectionProps) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
+        <div className="relative z-10 flex h-full flex-col items-start justify-center px-6 text-left">
         <p className="mb-4 font-sans text-sm font-medium uppercase tracking-[0.3em] text-foreground/70 animate-fade-up">
           Pennpictures
         </p>
