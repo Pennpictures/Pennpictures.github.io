@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-landscape.jpg";
+import heroImage from "@/assets/hero-landscape-DfjTqbxE.jpg";
 
 interface HeroSectionProps {
   googleFormUrl?: string;
