@@ -63,9 +63,6 @@ const GallerySection = () => {
           <p className="mb-3 font-sans text-xs font-medium uppercase tracking-[0.3em] text-primary">
             Portfolio
           </p>
-          <h2 className="font-serif text-4xl font-light text-foreground md:text-5xl">
-            Selected Works
-          </h2>
         </div>
 
         {/* Masonry Grid */}
