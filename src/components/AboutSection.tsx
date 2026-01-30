@@ -36,7 +36,7 @@ const AboutSection = () => {
                 snapping photos wherever we went (see photos below!). Those experiences
                 inspired us to start Pennpictures.
               </p>
-              <p className="leading-relaxed">
+              <p className="text-lg leading-relaxed">
                 We’re passionate about helping you document your special moments —
                 images you can look back on and cherish for years to come. We believe
                 that photography sessions should be easy and stress-free, so rest assured
