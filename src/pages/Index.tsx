@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Camera, ArrowRight, Menu, X as XIcon, Instagram } from "lucide-react";
+import {ArrowRight, Menu, X as XIcon, Instagram } from "lucide-react";
 import GalleryModal from "@/components/GalleryModal";
 
 import aboutMe from "@/assets/about-me.jpg";
@@ -62,7 +62,7 @@ const Index = () => {
       {/* Fixed Nav */}
       <nav className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-6 md:px-12 py-4 bg-background/70 backdrop-blur-md border-b border-border/50">
         <a href="#home" className="font-display text-xl text-foreground flex items-center gap-2">
-          <img src={logo} alt="Pennpictures" className="w-6 h-6" />
+          <img src={logo} alt="Pennpictures" className="w-60 h-60 rounded-full" />
           <span className="text-gradient-gold font-bold">Pennpictures</span>
         </a>
 
@@ -126,12 +126,12 @@ const Index = () => {
         <div className="absolute inset-0 overlay-dark" />
 
         <div className="relative z-10">
-          <img src={logo} alt="Pennpictures" className="w-6 h-6" />
+          <img src={logo} alt="Pennpictures" className="w-60 h-60 rounded-full mx-auto mb-6" />
           <h1 className="font-display text-5xl md:text-7xl font-bold text-foreground mb-4">
-            Penning<span className="text-gradient-gold">Memories</span>
+            Penning<span className="text-gradient-gold"> Memories</span>
           </h1>
           <p className="font-body text-lg max-w-xl mx-auto mb-10 text-primary-foreground">
-            Professional photography that tells your story. Let's create something beautiful together.
+            Penning down memories together.
           </p>
           <a
             href={GOOGLE_FORM_URL}
