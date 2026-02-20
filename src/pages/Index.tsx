@@ -126,9 +126,9 @@ const Index = () => {
         <div className="absolute inset-0 overlay-dark" />
 
         <div className="relative z-10">
-          <Camera className="w-12 h-12 text-primary mb-6 mx-auto" />
+          <img src={logo} alt="Pennpictures" className="w-6 h-6" />
           <h1 className="font-display text-5xl md:text-7xl font-bold text-foreground mb-4">
-            Capturing <span className="text-gradient-gold">Moments</span>
+            Penning<span className="text-gradient-gold">Memories</span>
           </h1>
           <p className="font-body text-lg max-w-xl mx-auto mb-10 text-primary-foreground">
             Professional photography that tells your story. Let's create something beautiful together.
