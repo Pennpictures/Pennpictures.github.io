@@ -2,7 +2,7 @@ import { useState } from "react";
 import {ArrowRight, Menu, X as XIcon, Instagram } from "lucide-react";
 import GalleryModal from "@/components/GalleryModal";
 
-import aboutMe from "@/assets/about-me.jpg";
+import aboutUs from "@/assets/about-us.jpg";
 import portfolio1 from "@/assets/portfolio-1.jpg";
 import portfolio2 from "@/assets/portfolio-2.jpg";
 import portfolio3 from "@/assets/portfolio-3.jpg";
@@ -151,8 +151,8 @@ const Index = () => {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="aspect-[3/4] overflow-hidden rounded-sm">
             <img
-              src={aboutMe}
-              alt="Photographer portrait"
+              src={aboutUs}
+              alt="Co-founder couple"
               className="w-full h-full object-cover" />
 
           </div>
