@@ -15,39 +15,39 @@ const INSTAGRAM_URL = "https://www.instagram.com/thepennpics/";
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
-  { label: "About Me", href: "#about" },
+  { label: "About Us", href: "#about" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Book Now", href: "#book" },
 ];
 
 const portfolioCategories = [
   {
-    title: "Weddings",
+    title: "",
     cover: portfolio1,
     images: [portfolio1, portfolio3, portfolio5, portfolio4, portfolio2],
   },
   {
-    title: "Portraits",
+    title: "",
     cover: portfolio2,
     images: [portfolio2, portfolio1, portfolio6, portfolio3, portfolio5],
   },
   {
-    title: "Events",
+    title: "",
     cover: portfolio3,
     images: [portfolio3, portfolio2, portfolio1, portfolio5, portfolio6],
   },
   {
-    title: "Pets",
+    title: "",
     cover: portfolio4,
     images: [portfolio4, portfolio1, portfolio6, portfolio2, portfolio5],
   },
   {
-    title: "Korea",
+    title: "",
     cover: portfolio5,
     images: [portfolio5, portfolio1, portfolio3, portfolio6, portfolio4],
   },
   {
-    title: "Taiwan",
+    title: "",
     cover: portfolio6,
     images: [portfolio6, portfolio4, portfolio2, portfolio5, portfolio1],
   },
@@ -145,7 +145,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Me */}
+      {/* About Us */}
       <section id="about" className="py-24 px-6 scroll-mt-20">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="aspect-[3/4] overflow-hidden rounded-sm">
@@ -160,7 +160,7 @@ const Index = () => {
               About <span className="text-gradient-gold">Me</span>
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed mb-4">
-                ur photography journey began during the two years we lived in Taiwan.
+                Our photography journey began during the two years we lived in Taiwan.
                 On weekends we would often explore different parts of the country,
                 snapping photos wherever we went (see photos below!). Those experiences
                 inspired us to start Pennpictures.
