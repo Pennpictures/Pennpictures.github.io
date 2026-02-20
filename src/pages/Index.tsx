@@ -12,12 +12,12 @@ import portfolio6 from "@/assets/portfolio-6.jpg";
 import logo from "@/assets/Pennpictures Logo.png";
 import CTALandscape from "@/assets/hero-landscape2.jpg";
 
-const GOOGLE_FORM_URL = "https://forms.google.com/your-form-link";
+const GOOGLE_FORM_URL = "https://forms.gle/YTRbtXydcsnm8Jv76";
 const INSTAGRAM_URL = "https://www.instagram.com/thepennpics/";
 
 const NAV_LINKS = [
 { label: "Home", href: "#home" },
-{ label: "About Me", href: "#about" },
+{ label: "About Us", href: "#about" },
 { label: "Portfolio", href: "#portfolio" },
 { label: "Book Now", href: "#book" }];
 
