@@ -22,7 +22,7 @@ const NAV_LINKS = [
 
 const portfolioCategories = [
   {
-    title: "",
+    title: "Weddings",
     cover: portfolio1,
     images: [portfolio1, portfolio3, portfolio5, portfolio4, portfolio2],
   },
@@ -157,7 +157,7 @@ const Index = () => {
           </div>
           <div>
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              About <span className="text-gradient-gold">Me</span>
+              About <span className="text-gradient-gold">Us</span>
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed mb-4">
                 Our photography journey began during the two years we lived in Taiwan.
