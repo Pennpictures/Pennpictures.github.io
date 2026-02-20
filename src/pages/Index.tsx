@@ -12,6 +12,7 @@ import portfolio6 from "@/assets/portfolio-6.jpg";
 import logo from "@/assets/Pennpictures Logo.png";
 
 const GOOGLE_FORM_URL = "https://forms.google.com/your-form-link";
+const INSTAGRAM_URL = "https://www.instagram.com/thepennpics/";
 
 const NAV_LINKS = [
 { label: "Home", href: "#home" },
@@ -62,7 +63,7 @@ const Index = () => {
       {/* Fixed Nav */}
       <nav className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-6 md:px-12 py-4 bg-background/70 backdrop-blur-md border-b border-border/50">
         <a href="#home" className="font-display text-xl text-foreground flex items-center gap-2">
-          <img src={logo} alt="Pennpictures" className="w-60 h-60 rounded-full" />
+          <img src={logo} alt="Pennpictures" className="w-10 h-10 rounded-full" />
           <span className="text-gradient-gold font-bold">Pennpictures</span>
         </a>
 
@@ -78,7 +79,7 @@ const Index = () => {
             </a>
           )}
           <a
-            href="https://instagram.com/your-handle"
+            href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -126,7 +127,6 @@ const Index = () => {
         <div className="absolute inset-0 overlay-dark" />
 
         <div className="relative z-10">
-          <img src={logo} alt="Pennpictures" className="w-60 h-60 rounded-full mx-auto mb-6" />
           <h1 className="font-display text-5xl md:text-7xl font-bold text-foreground mb-4">
             Penning<span className="text-gradient-gold"> Memories</span>
           </h1>
@@ -160,13 +160,17 @@ const Index = () => {
               About <span className="text-gradient-gold">Me</span>
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed mb-4">
-              With over a decade of experience behind the lens, I specialize in capturing
-              the raw beauty of life's most precious moments. From intimate portraits to
-              sweeping landscapes, every frame is crafted with intention and artistry.
+                Our photography journey began during the two years we lived in Taiwan.
+                On weekends we would often explore different parts of the country,
+                snapping photos wherever we went (see photos below!). Those experiences
+                inspired us to start Pennpictures.
             </p>
             <p className="font-body text-muted-foreground leading-relaxed">
-              My approach blends documentary authenticity with cinematic composition,
-              creating images that resonate long after the shutter clicks.
+                We’re passionate about helping you document your special moments —
+                images you can look back on and cherish for years to come. We believe
+                that photography sessions should be easy and stress-free, so rest assured
+                — you are in good hands! Our goal is to make every session as relaxed and
+                fun as possible.
             </p>
           </div>
         </div>
@@ -179,7 +183,7 @@ const Index = () => {
             Portfolio <span className="text-gradient-gold">Shots</span>
           </h2>
           <p className="text-muted-foreground text-center mb-16 font-body">
-            Click any category to explore the gallery
+            Click to explore the gallery
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {portfolioCategories.map((cat, i) =>
@@ -208,7 +212,7 @@ const Index = () => {
       <section id="book" className="py-24 px-6 text-center scroll-mt-20">
         <div className="max-w-2xl mx-auto bg-primary/90 backdrop-blur-sm border border-border rounded-sm p-12">
           <h2 className="font-display text-3xl font-bold mb-4 text-primary-foreground">
-            Ready to <span className="text-gradient-gold">Book</span>?
+            Ready to <span className="text-gradient-gold">Penn</span>?
           </h2>
           <p className="font-body mb-8 text-primary-foreground">
             Reserve your session today. Fill out the form and I'll get back to you within 24 hours.
@@ -228,7 +232,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 text-center border-t border-border flex flex-col items-center gap-4">
         <a
-          href="https://instagram.com/your-handle"
+          href={INSTAGRAM_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-foreground transition-colors"
