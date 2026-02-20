@@ -32,8 +32,9 @@ jobs:
           rm -rf docs
           cp -r dist docs
 
-      - name: Commit changes to main branch
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'ci: Deploy latest build to docs'
-          file_pattern: 'docs/'
+      - name: Commit and push docs if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add docs/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "ci: Deploy latest build to docs" && git push origin main)
