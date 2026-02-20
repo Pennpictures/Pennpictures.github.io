@@ -10,6 +10,7 @@ import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
 import logo from "@/assets/Pennpictures Logo.png";
+import CTALandscape from "@/assets/hero-landscape2.jpg";
 
 const GOOGLE_FORM_URL = "https://forms.google.com/your-form-link";
 const INSTAGRAM_URL = "https://www.instagram.com/thepennpics/";
@@ -23,32 +24,32 @@ const NAV_LINKS = [
 
 const portfolioCategories = [
 {
-  title: "Landscapes",
+  title: "",
   cover: portfolio1,
   images: [portfolio1, portfolio3, portfolio5, portfolio4, portfolio2]
 },
 {
-  title: "Portraits",
+  title: "",
   cover: portfolio2,
   images: [portfolio2, portfolio1, portfolio6, portfolio3, portfolio5]
 },
 {
-  title: "Weddings",
+  title: "",
   cover: portfolio3,
   images: [portfolio3, portfolio2, portfolio1, portfolio5, portfolio6]
 },
 {
-  title: "Street",
+  title: "",
   cover: portfolio4,
   images: [portfolio4, portfolio1, portfolio6, portfolio2, portfolio5]
 },
 {
-  title: "Nature",
+  title: "",
   cover: portfolio5,
   images: [portfolio5, portfolio1, portfolio3, portfolio6, portfolio4]
 },
 {
-  title: "Food",
+  title: "",
   cover: portfolio6,
   images: [portfolio6, portfolio4, portfolio2, portfolio5, portfolio1]
 }];
@@ -120,8 +121,8 @@ const Index = () => {
         className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center">
 
         <img
-          src={portfolio1}
-          alt="Landscape hero"
+          src={CTALandscape}
+          alt="Co-founder Couple in Taiwan"
           className="absolute inset-0 w-full h-full object-cover" />
 
         <div className="absolute inset-0 overlay-dark" />
