@@ -10,7 +10,8 @@ import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
 
-const GOOGLE_FORM_URL = "https://forms.google.com/your-form-link";
+const GOOGLE_FORM_URL = "https://forms.gle/YTRbtXydcsnm8Jv76";
+const INSTAGRAM_URL = "https://www.instagram.com/thepennpics/";
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
@@ -77,7 +78,7 @@ const Index = () => {
             </a>
           ))}
           <a
-            href="https://www.instagram.com/thepennpics/"
+            href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -133,7 +134,7 @@ const Index = () => {
             Professional photography that tells your story. Let's create something beautiful together.
           </p>
           <a
-            href="https://forms.gle/kU7h2Ns9VwsTK6jy6"
+            href={GOOGLE_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-sm font-body font-semibold text-lg hover:opacity-90 transition-opacity"
@@ -217,7 +218,7 @@ const Index = () => {
             Reserve your session today. Fill out the form and We'll get back to you within 1 week.
           </p>
           <a
-            href="https://forms.gle/kU7h2Ns9VwsTK6jy6"
+            href={GOOGLE_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-sm font-body font-semibold text-lg hover:opacity-90 transition-opacity"
@@ -231,7 +232,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 text-center border-t border-border flex flex-col items-center gap-4">
         <a
-          href="https://www.instagram.com/thepennpics/"
+          href={INSTAGRAM_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-foreground transition-colors"

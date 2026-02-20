@@ -25,12 +25,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Copy build to docs folder
+        run: |
+          rm -rf docs
+          cp -r dist docs
+
+      - name: Commit changes to main branch
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages
-          # optional: set committer name/email
-          # user_name: github-actions
-          # user_email: github-actions@github.com
+          commit_message: 'ci: Deploy latest build to docs'
+          file_pattern: 'docs/'
