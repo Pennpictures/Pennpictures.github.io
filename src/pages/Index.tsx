@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Camera, ArrowRight } from "lucide-react";
+import { Camera, ArrowRight, Menu, X as XIcon } from "lucide-react";
 import GalleryModal from "@/components/GalleryModal";
 
 import aboutMe from "@/assets/about-me.jpg";
@@ -11,6 +11,13 @@ import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
 
 const GOOGLE_FORM_URL = "https://forms.google.com/your-form-link";
+
+const NAV_LINKS = [
+  { label: "Home", href: "#home" },
+  { label: "About Me", href: "#about" },
+  { label: "Portfolio", href: "#portfolio" },
+  { label: "Book Now", href: "#book" },
+];
 
 const portfolioCategories = [
   {
@@ -47,31 +54,89 @@ const portfolioCategories = [
 
 const Index = () => {
   const [galleryOpen, setGalleryOpen] = useState<number | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center">
-        <Camera className="w-12 h-12 text-primary mb-6" />
-        <h1 className="font-display text-5xl md:text-7xl font-bold text-foreground mb-4">
-          Capturing <span className="text-gradient-gold">Moments</span>
-        </h1>
-        <p className="font-body text-lg text-muted-foreground max-w-xl mb-10">
-          Professional photography that tells your story. Let's create something beautiful together.
-        </p>
-        <a
-          href={GOOGLE_FORM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-sm font-body font-semibold text-lg hover:opacity-90 transition-opacity"
-        >
-          Book Now
-          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+      {/* Fixed Nav */}
+      <nav className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-6 md:px-12 py-4 bg-background/70 backdrop-blur-md border-b border-border/50">
+        <a href="#home" className="font-display text-xl text-foreground flex items-center gap-2">
+          <Camera className="w-5 h-5 text-primary" />
+          <span className="text-gradient-gold font-bold">Studio</span>
         </a>
+
+        {/* Desktop links */}
+        <div className="hidden md:flex items-center gap-8">
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+
+        {/* Mobile toggle */}
+        <button
+          className="md:hidden text-foreground"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? <XIcon className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
+      </nav>
+
+      {/* Mobile menu */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 z-30 bg-background/95 backdrop-blur-sm flex flex-col items-center justify-center gap-8 md:hidden">
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMobileMenuOpen(false)}
+              className="font-display text-2xl text-foreground hover:text-primary transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      )}
+
+      {/* Hero with landscape background */}
+      <section
+        id="home"
+        className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center"
+      >
+        <img
+          src={portfolio1}
+          alt="Landscape hero"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 overlay-dark" />
+
+        <div className="relative z-10">
+          <Camera className="w-12 h-12 text-primary mb-6 mx-auto" />
+          <h1 className="font-display text-5xl md:text-7xl font-bold text-foreground mb-4">
+            Capturing <span className="text-gradient-gold">Moments</span>
+          </h1>
+          <p className="font-body text-lg text-foreground/70 max-w-xl mx-auto mb-10">
+            Professional photography that tells your story. Let's create something beautiful together.
+          </p>
+          <a
+            href={GOOGLE_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-sm font-body font-semibold text-lg hover:opacity-90 transition-opacity"
+          >
+            Book Now
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
       </section>
 
       {/* About Me */}
-      <section className="py-24 px-6">
+      <section id="about" className="py-24 px-6 scroll-mt-20">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="aspect-[3/4] overflow-hidden rounded-sm">
             <img
@@ -98,7 +163,7 @@ const Index = () => {
       </section>
 
       {/* Portfolio */}
-      <section className="py-24 px-6">
+      <section id="portfolio" className="py-24 px-6 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-display text-4xl font-bold text-foreground text-center mb-4">
             Portfolio <span className="text-gradient-gold">Shots</span>
@@ -112,7 +177,6 @@ const Index = () => {
                 key={cat.title}
                 onClick={() => setGalleryOpen(i)}
                 className="group relative aspect-square overflow-hidden rounded-sm"
-                style={{ animationDelay: `${i * 100}ms` }}
               >
                 <img
                   src={cat.cover}
@@ -131,7 +195,7 @@ const Index = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 text-center">
+      <section id="book" className="py-24 px-6 text-center scroll-mt-20">
         <div className="max-w-2xl mx-auto glass-card rounded-sm p-12">
           <h2 className="font-display text-3xl font-bold text-foreground mb-4">
             Ready to <span className="text-gradient-gold">Book</span>?
