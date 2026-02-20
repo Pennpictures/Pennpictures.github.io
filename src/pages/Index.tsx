@@ -157,7 +157,7 @@ const Index = () => {
           </div>
           <div>
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              About <span className="text-gradient-gold">Me</span>
+              About <span className="text-gradient-gold">Us</span>
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed mb-4">
                 Our photography journey began during the two years we lived in Taiwan.
@@ -241,7 +241,7 @@ const Index = () => {
           <Instagram className="w-5 h-5" />
         </a>
         <p className="text-muted-foreground font-body text-sm">
-          © 2026 Photography. All rights reserved.
+          © 2026 ThePennPictures. All rights reserved.
         </p>
       </footer>
 
