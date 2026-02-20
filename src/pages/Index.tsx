@@ -9,6 +9,7 @@ import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
+import logo from "@/assets/Pennpictures Logo.png";
 
 const GOOGLE_FORM_URL = "https://forms.google.com/your-form-link";
 
@@ -61,8 +62,8 @@ const Index = () => {
       {/* Fixed Nav */}
       <nav className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-6 md:px-12 py-4 bg-background/70 backdrop-blur-md border-b border-border/50">
         <a href="#home" className="font-display text-xl text-foreground flex items-center gap-2">
-          <Camera className="w-5 h-5 text-primary" />
-          <span className="text-gradient-gold font-bold">Studio</span>
+          <img src={logo} alt="Pennpictures" className="w-6 h-6" />
+          <span className="text-gradient-gold font-bold">Pennpictures</span>
         </a>
 
         {/* Desktop links */}
@@ -126,7 +127,7 @@ const Index = () => {
 
         <div className="relative z-10">
           <Camera className="w-12 h-12 text-primary mb-6 mx-auto" />
-          <h1 className="font-display text-5xl md:text-7xl font-bold mb-4 text-primary-foreground">
+          <h1 className="font-display text-5xl md:text-7xl font-bold text-foreground mb-4">
             Capturing <span className="text-gradient-gold">Moments</span>
           </h1>
           <p className="font-body text-lg max-w-xl mx-auto mb-10 text-primary-foreground">
