@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Camera, ArrowRight, Menu, X as XIcon } from "lucide-react";
+import { Camera, ArrowRight, Menu, X as XIcon, Instagram } from "lucide-react";
 import GalleryModal from "@/components/GalleryModal";
 
 import aboutMe from "@/assets/about-me.jpg";
@@ -76,6 +76,15 @@ const Index = () => {
               {link.label}
             </a>
           ))}
+          <a
+            href="https://instagram.com/your-handle"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="Instagram"
+          >
+            <Instagram className="w-5 h-5" />
+          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -216,7 +225,16 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 text-center border-t border-border">
+      <footer className="py-8 text-center border-t border-border flex flex-col items-center gap-4">
+        <a
+          href="https://instagram.com/your-handle"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-muted-foreground hover:text-foreground transition-colors"
+          aria-label="Instagram"
+        >
+          <Instagram className="w-5 h-5" />
+        </a>
         <p className="text-muted-foreground font-body text-sm">
           © 2026 Photography. All rights reserved.
         </p>
