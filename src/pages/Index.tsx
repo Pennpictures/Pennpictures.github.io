@@ -21,7 +21,7 @@ const NAV_LINKS = [
 
 const portfolioCategories = [
   {
-    title: "Landscapes",
+    title: "Weddings",
     cover: portfolio1,
     images: [portfolio1, portfolio3, portfolio5, portfolio4, portfolio2],
   },
@@ -31,22 +31,22 @@ const portfolioCategories = [
     images: [portfolio2, portfolio1, portfolio6, portfolio3, portfolio5],
   },
   {
-    title: "Weddings",
+    title: "Events",
     cover: portfolio3,
     images: [portfolio3, portfolio2, portfolio1, portfolio5, portfolio6],
   },
   {
-    title: "Street",
+    title: "Pets",
     cover: portfolio4,
     images: [portfolio4, portfolio1, portfolio6, portfolio2, portfolio5],
   },
   {
-    title: "Nature",
+    title: "Korea",
     cover: portfolio5,
     images: [portfolio5, portfolio1, portfolio3, portfolio6, portfolio4],
   },
   {
-    title: "Food",
+    title: "Taiwan",
     cover: portfolio6,
     images: [portfolio6, portfolio4, portfolio2, portfolio5, portfolio1],
   },
@@ -77,7 +77,7 @@ const Index = () => {
             </a>
           ))}
           <a
-            href="https://instagram.com/your-handle"
+            href="https://www.instagram.com/thepennpics/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -133,7 +133,7 @@ const Index = () => {
             Professional photography that tells your story. Let's create something beautiful together.
           </p>
           <a
-            href={GOOGLE_FORM_URL}
+            href="https://forms.gle/kU7h2Ns9VwsTK6jy6"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-sm font-body font-semibold text-lg hover:opacity-90 transition-opacity"
@@ -159,13 +159,17 @@ const Index = () => {
               About <span className="text-gradient-gold">Me</span>
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed mb-4">
-              With over a decade of experience behind the lens, I specialize in capturing
-              the raw beauty of life's most precious moments. From intimate portraits to
-              sweeping landscapes, every frame is crafted with intention and artistry.
+                ur photography journey began during the two years we lived in Taiwan.
+                On weekends we would often explore different parts of the country,
+                snapping photos wherever we went (see photos below!). Those experiences
+                inspired us to start Pennpictures.
             </p>
             <p className="font-body text-muted-foreground leading-relaxed">
-              My approach blends documentary authenticity with cinematic composition,
-              creating images that resonate long after the shutter clicks.
+               We’re passionate about helping you document your special moments —
+                images you can look back on and cherish for years to come. We believe
+                that photography sessions should be easy and stress-free, so rest assured
+                — you are in good hands! Our goal is to make every session as relaxed and
+                fun as possible.
             </p>
           </div>
         </div>
@@ -210,10 +214,10 @@ const Index = () => {
             Ready to <span className="text-gradient-gold">Book</span>?
           </h2>
           <p className="text-muted-foreground font-body mb-8">
-            Reserve your session today. Fill out the form and I'll get back to you within 24 hours.
+            Reserve your session today. Fill out the form and We'll get back to you within 1 week.
           </p>
           <a
-            href={GOOGLE_FORM_URL}
+            href="https://forms.gle/kU7h2Ns9VwsTK6jy6"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-sm font-body font-semibold text-lg hover:opacity-90 transition-opacity"
@@ -227,7 +231,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 text-center border-t border-border flex flex-col items-center gap-4">
         <a
-          href="https://instagram.com/your-handle"
+          href="https://www.instagram.com/thepennpics/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-foreground transition-colors"
