@@ -1,15 +1,3 @@
-node_modules/
-dist/
-.env
-.env.local
-.DS_Store
-.vite
-.cache
-.idea/
-.vscode/
-# build outputs
-build/
-coverage/
 # Logs
 logs
 *.log
