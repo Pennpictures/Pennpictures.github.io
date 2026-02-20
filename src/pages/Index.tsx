@@ -196,7 +196,7 @@ const Index = () => {
 
       {/* CTA */}
       <section id="book" className="py-24 px-6 text-center scroll-mt-20">
-        <div className="max-w-2xl mx-auto bg-muted/80 backdrop-blur-sm border border-border rounded-sm p-12">
+        <div className="max-w-2xl mx-auto bg-primary/90 backdrop-blur-sm border border-border rounded-sm p-12">
           <h2 className="font-display text-3xl font-bold text-foreground mb-4">
             Ready to <span className="text-gradient-gold">Book</span>?
           </h2>
